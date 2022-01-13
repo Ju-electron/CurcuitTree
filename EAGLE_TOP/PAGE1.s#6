@@ -2187,9 +2187,9 @@ by R. Vogg  15.March.2002</description>
 <attribute name="NAME" x="119.38" y="213.36" size="1.778" layer="95"/>
 <attribute name="VALUE" x="118.872" y="206.248" size="1.778" layer="96"/>
 </instance>
-<instance part="VR1" gate="G$1" x="38.1" y="220.98" smashed="yes" rot="MR270">
-<attribute name="NAME" x="44.45" y="223.52" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="44.45" y="218.44" size="1.778" layer="96" rot="MR0"/>
+<instance part="VR1" gate="G$1" x="38.1" y="218.44" smashed="yes" rot="MR270">
+<attribute name="NAME" x="44.45" y="220.98" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="44.45" y="215.9" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="D1" gate="G$1" x="27.94" y="208.28" smashed="yes">
 <attribute name="NAME" x="15.24" y="210.82" size="1.778" layer="95"/>
@@ -2774,18 +2774,21 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="VR1" gate="G$1" pin="2"/>
 <pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="223.52" x2="38.1" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="DIS"/>
 <wire x1="38.1" y1="226.06" x2="38.1" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="220.98" x2="50.8" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="220.98" x2="50.8" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="226.06" x2="38.1" y2="226.06" width="0.1524" layer="91"/>
+<junction x="38.1" y="226.06"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="D2" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="220.98" x2="50.8" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="DIS"/>
-<wire x1="63.5" y1="220.98" x2="50.8" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="218.44" x2="50.8" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="VR1" gate="G$1" pin="3"/>
-<wire x1="43.18" y1="220.98" x2="50.8" y2="220.98" width="0.1524" layer="91"/>
-<junction x="50.8" y="220.98"/>
+<wire x1="43.18" y1="218.44" x2="50.8" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GNDR" class="1">
@@ -3672,8 +3675,8 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="D1" gate="G$1" pin="1"/>
 <pinref part="VR1" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="215.9" x2="27.94" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="220.98" x2="33.02" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="215.9" x2="27.94" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="218.44" x2="33.02" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

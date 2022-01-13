@@ -173,7 +173,7 @@
 <plain>
 <circle x="80" y="80" radius="80.622575" width="0.1524" layer="20"/>
 <text x="64.77" y="19.304" size="5.08" layer="21">IC Curcuit</text>
-<text x="72.136" y="1.524" size="5.08" layer="21">Tree</text>
+<text x="72.898" y="1.778" size="5.08" layer="21">Tree</text>
 <text x="146.558" y="70.104" size="2.54" layer="16" font="vector" rot="MR90">Designed by JsKim</text>
 </plain>
 <libraries>
