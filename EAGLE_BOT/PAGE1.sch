@@ -357,13 +357,14 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <package name="SMD_DIODE">
 <smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1"/>
 <smd name="2" x="3.3" y="0" dx="1.5" dy="1.5" layer="1"/>
-<wire x1="-1.016" y1="1.016" x2="-1.016" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-1.016" y1="-1.016" x2="4.064" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="4.064" y1="-1.016" x2="4.318" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="4.318" y1="-0.762" x2="4.318" y2="0.762" width="0.127" layer="21"/>
-<wire x1="4.318" y1="0.762" x2="4.064" y2="1.016" width="0.127" layer="21"/>
-<wire x1="4.064" y1="1.016" x2="-1.016" y2="1.016" width="0.127" layer="21"/>
-<text x="-1.27" y="1.27" size="1.27" layer="21">&gt;NAME</text>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="1.016" y1="0.762" x2="1.016" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.762" x2="2.032" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-0.762" x2="2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="2.286" y1="-0.762" x2="2.286" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="2.286" y1="0.762" x2="2.032" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="0.762" x2="1.016" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="0.762" x2="2.032" y2="-0.762" width="0.1524" layer="21"/>
 </package>
 <package name="CAP_POL">
 <pad name="1" x="0" y="0" drill="0.8" diameter="1.6"/>
@@ -2049,9 +2050,9 @@ by R. Vogg  15.March.2002</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.254" drill="0.8">
+<class number="0" name="default" width="0.254" drill="0">
 </class>
-<class number="1" name="POWER" width="0.3" drill="0.8">
+<class number="1" name="POWER" width="0.3" drill="0">
 </class>
 </classes>
 <parts>
@@ -2236,8 +2237,6 @@ by R. Vogg  15.March.2002</description>
 <part name="R45" library="!JKS" deviceset="RES" device="_2012" value="20K"/>
 <part name="R46" library="!JKS" deviceset="RES" device="_2012" value="20K"/>
 <part name="GND37" library="!JKS" deviceset="GND" device=""/>
-<part name="R47" library="!JKS" deviceset="RES" device="_2012" value="20K"/>
-<part name="+5V27" library="!JKS" deviceset="+5V" device=""/>
 <part name="R48" library="!JKS" deviceset="RES" device="_2012" value="10K"/>
 <part name="C20" library="!JKS" deviceset="CAP_NP" device="_SMD2012" value="0.1uF"/>
 <part name="GND29" library="!JKS" deviceset="GND" device=""/>
@@ -2259,6 +2258,13 @@ by R. Vogg  15.March.2002</description>
 <part name="NC34" library="!JKS" deviceset="NC" device=""/>
 <part name="NC35" library="!JKS" deviceset="NC" device=""/>
 <part name="NC36" library="!JKS" deviceset="NC" device=""/>
+<part name="R17" library="!JKS" deviceset="RES" device="_2012" value="47k"/>
+<part name="R22" library="!JKS" deviceset="RES" device="_2012" value="47k"/>
+<part name="R23" library="!JKS" deviceset="RES" device="_2012" value="47k"/>
+<part name="GND14" library="!JKS" deviceset="GND" device=""/>
+<part name="GND15" library="!JKS" deviceset="GND" device=""/>
+<part name="GND42" library="!JKS" deviceset="GND" device=""/>
+<part name="C10" library="!JKS" deviceset="CAP_POL" device="_BIG" value="100uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -3794,13 +3800,6 @@ by R. Vogg  15.March.2002</description>
 <instance part="GND37" gate="G$1" x="353.06" y="114.3" smashed="yes">
 <attribute name="VALUE" x="353.06" y="110.236" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R47" gate="G$1" x="327.66" y="48.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="325.12" y="50.8" size="1.778" layer="95"/>
-<attribute name="VALUE" x="324.612" y="43.688" size="1.778" layer="96"/>
-</instance>
-<instance part="+5V27" gate="G$1" x="304.8" y="63.5" smashed="yes">
-<attribute name="VALUE" x="304.8" y="67.31" size="1.27" layer="96" align="center"/>
-</instance>
 <instance part="R48" gate="G$1" x="157.48" y="27.94" smashed="yes">
 <attribute name="NAME" x="158.75" y="27.94" size="1.778" layer="95"/>
 <attribute name="VALUE" x="158.75" y="25.4" size="1.778" layer="96"/>
@@ -3834,14 +3833,39 @@ by R. Vogg  15.March.2002</description>
 <instance part="GND39" gate="G$1" x="259.08" y="213.36" smashed="yes">
 <attribute name="VALUE" x="259.08" y="209.296" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="P1" gate="G$1" x="342.9" y="195.58" smashed="yes">
-<attribute name="NAME" x="337.566" y="201.422" size="1.778" layer="95"/>
+<instance part="P1" gate="G$1" x="43.18" y="236.22" smashed="yes">
+<attribute name="NAME" x="37.846" y="242.062" size="1.778" layer="95"/>
 </instance>
-<instance part="+5V30" gate="G$1" x="358.14" y="205.74" smashed="yes">
-<attribute name="VALUE" x="358.14" y="209.55" size="1.27" layer="96" align="center"/>
+<instance part="+5V30" gate="G$1" x="58.42" y="246.38" smashed="yes">
+<attribute name="VALUE" x="58.42" y="250.19" size="1.27" layer="96" align="center"/>
 </instance>
-<instance part="GND40" gate="G$1" x="358.14" y="185.42" smashed="yes">
-<attribute name="VALUE" x="358.14" y="181.356" size="1.778" layer="96" align="center"/>
+<instance part="GND40" gate="G$1" x="58.42" y="226.06" smashed="yes">
+<attribute name="VALUE" x="58.42" y="221.996" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="R17" gate="G$1" x="302.26" y="165.1" smashed="yes">
+<attribute name="NAME" x="303.53" y="165.1" size="1.778" layer="95"/>
+<attribute name="VALUE" x="303.53" y="162.56" size="1.778" layer="96"/>
+</instance>
+<instance part="R22" gate="G$1" x="309.88" y="165.1" smashed="yes">
+<attribute name="NAME" x="311.15" y="165.1" size="1.778" layer="95"/>
+<attribute name="VALUE" x="311.15" y="162.56" size="1.778" layer="96"/>
+</instance>
+<instance part="R23" gate="G$1" x="317.5" y="165.1" smashed="yes">
+<attribute name="NAME" x="318.77" y="165.1" size="1.778" layer="95"/>
+<attribute name="VALUE" x="318.77" y="162.56" size="1.778" layer="96"/>
+</instance>
+<instance part="GND14" gate="G$1" x="302.26" y="157.48" smashed="yes">
+<attribute name="VALUE" x="302.26" y="153.416" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="GND15" gate="G$1" x="309.88" y="157.48" smashed="yes">
+<attribute name="VALUE" x="309.88" y="153.416" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="GND42" gate="G$1" x="317.5" y="157.48" smashed="yes">
+<attribute name="VALUE" x="317.5" y="153.416" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="C10" gate="G$1" x="66.04" y="238.76" smashed="yes">
+<attribute name="NAME" x="71.12" y="238.76" size="1.27" layer="95"/>
+<attribute name="VALUE" x="71.12" y="236.982" size="1.27" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -3985,8 +4009,25 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="P1" gate="G$1" pin="-"/>
 <pinref part="GND40" gate="G$1" pin="GND"/>
-<wire x1="353.06" y1="193.04" x2="358.14" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="193.04" x2="358.14" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="233.68" x2="58.42" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="233.68" x2="58.42" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="231.14" x2="58.42" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="233.68" x2="66.04" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="231.14" x2="58.42" y2="231.14" width="0.1524" layer="91"/>
+<junction x="58.42" y="231.14"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="GND14" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R22" gate="G$1" pin="2"/>
+<pinref part="GND15" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R23" gate="G$1" pin="2"/>
+<pinref part="GND42" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="N$59" class="0">
@@ -4076,12 +4117,6 @@ by R. Vogg  15.March.2002</description>
 <wire x1="304.8" y1="121.92" x2="302.26" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="+5V27" gate="G$1" pin="+5V"/>
-<pinref part="R47" gate="G$1" pin="1"/>
-<wire x1="304.8" y1="60.96" x2="304.8" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="48.26" x2="322.58" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="+5V28" gate="G$1" pin="+5V"/>
 <pinref part="C26" gate="G$1" pin="1"/>
 <wire x1="276.86" y1="73.66" x2="281.94" y2="73.66" width="0.1524" layer="91"/>
@@ -4100,8 +4135,12 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="P1" gate="G$1" pin="+"/>
 <pinref part="+5V30" gate="G$1" pin="+5V"/>
-<wire x1="353.06" y1="198.12" x2="358.14" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="198.12" x2="358.14" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="238.76" x2="58.42" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="238.76" x2="58.42" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="241.3" x2="58.42" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="241.3" x2="66.04" y2="241.3" width="0.1524" layer="91"/>
+<junction x="58.42" y="241.3"/>
 </segment>
 </net>
 <net name="N$62" class="0">
@@ -4237,8 +4276,12 @@ by R. Vogg  15.March.2002</description>
 </segment>
 <segment>
 <pinref part="D9" gate="G$1" pin="2"/>
-<wire x1="299.72" y1="215.9" x2="320.04" y2="215.9" width="0.1524" layer="91"/>
-<label x="304.8" y="215.9" size="1.778" layer="95"/>
+<wire x1="299.72" y1="215.9" x2="302.26" y2="215.9" width="0.1524" layer="91"/>
+<label x="322.58" y="215.9" size="1.778" layer="95"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="302.26" y1="215.9" x2="337.82" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="170.18" x2="302.26" y2="215.9" width="0.1524" layer="91"/>
+<junction x="302.26" y="215.9"/>
 </segment>
 <segment>
 <pinref part="D14" gate="G$1" pin="2"/>
@@ -4253,9 +4296,13 @@ by R. Vogg  15.March.2002</description>
 <label x="220.98" y="195.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="299.72" y1="195.58" x2="320.04" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="195.58" x2="309.88" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="D10" gate="G$1" pin="2"/>
-<label x="304.8" y="195.58" size="1.778" layer="95"/>
+<label x="322.58" y="195.58" size="1.778" layer="95"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<wire x1="309.88" y1="195.58" x2="337.82" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="170.18" x2="309.88" y2="195.58" width="0.1524" layer="91"/>
+<junction x="309.88" y="195.58"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="119.38" x2="236.22" y2="119.38" width="0.1524" layer="91"/>
@@ -4270,9 +4317,13 @@ by R. Vogg  15.March.2002</description>
 <label x="220.98" y="175.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="299.72" y1="175.26" x2="320.04" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="175.26" x2="317.5" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="D11" gate="G$1" pin="2"/>
-<label x="304.8" y="175.26" size="1.778" layer="95"/>
+<label x="322.58" y="175.26" size="1.778" layer="95"/>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="317.5" y1="175.26" x2="337.82" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="170.18" x2="317.5" y2="175.26" width="0.1524" layer="91"/>
+<junction x="317.5" y="175.26"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="99.06" x2="236.22" y2="99.06" width="0.1524" layer="91"/>
@@ -4500,9 +4551,6 @@ by R. Vogg  15.March.2002</description>
 <wire x1="335.28" y1="68.58" x2="335.28" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R45" gate="G$1" pin="2"/>
 <wire x1="332.74" y1="60.96" x2="335.28" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R47" gate="G$1" pin="2"/>
-<wire x1="332.74" y1="48.26" x2="335.28" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="335.28" y1="48.26" x2="335.28" y2="60.96" width="0.1524" layer="91"/>
 <junction x="335.28" y="60.96"/>
 <wire x1="335.28" y1="60.96" x2="353.06" y2="60.96" width="0.1524" layer="91"/>
 <label x="340.36" y="60.96" size="1.778" layer="95"/>

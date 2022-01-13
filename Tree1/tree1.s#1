@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -221,15 +221,10 @@ DIN A4, landscape with location and doc. field</description>
 <description>KJS LIB 20200623</description>
 <packages>
 <package name="TREE_CON_SINGLE">
-<dimension x1="0" y1="0" x2="-20" y2="0" x3="-10" y3="2" textsize="1.778" layer="20"/>
 <smd name="2" x="-20" y="-3" dx="5.08" dy="2.54" layer="1" rot="R90"/>
 <smd name="1" x="-30" y="-3" dx="5.08" dy="2.54" layer="1" rot="R90"/>
-<dimension x1="-20" y1="0" x2="-30" y2="0" x3="-25" y3="2" textsize="1.778" layer="20"/>
-<dimension x1="0" y1="0" x2="20" y2="0" x3="10" y3="-2" textsize="1.778" layer="20"/>
 <smd name="3" x="20" y="-2.08" dx="5.08" dy="2.54" layer="1" rot="R270"/>
 <smd name="4" x="30" y="-2.08" dx="5.08" dy="2.54" layer="1" rot="R270"/>
-<dimension x1="20" y1="0" x2="30" y2="0" x3="25" y3="-2" textsize="1.778" layer="20"/>
-<dimension x1="-42" y1="0" x2="0" y2="0" x3="-21" y3="5" textsize="1.778" layer="20"/>
 <polygon width="0.254" layer="1" spacing="0.254">
 <vertex x="-33" y="0"/>
 <vertex x="-33" y="-5"/>
@@ -366,11 +361,8 @@ DIN A4, landscape with location and doc. field</description>
 </package>
 <package name="TP">
 <pad name="1" x="0" y="0" drill="1" diameter="1.8"/>
-<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
 <text x="0" y="2.286" size="1.27" layer="25" align="center">&gt;NAME</text>
+<circle x="0" y="0" radius="1.27" width="0.1524" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -618,9 +610,9 @@ DIN A4, landscape with location and doc. field</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.254" drill="0.8">
+<class number="0" name="default" width="0.254" drill="0">
 </class>
-<class number="1" name="POWER" width="0.3" drill="0.8">
+<class number="1" name="POWER" width="0.3" drill="0">
 </class>
 </classes>
 <parts>

@@ -253,11 +253,12 @@ DIN A4, landscape with location and doc. field</description>
 <text x="-35.56" y="2.54" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="SOLDER_CON_2">
-<smd name="P$1" x="0" y="0.635" dx="0.5" dy="1.27" layer="1"/>
-<smd name="P$2" x="1.27" y="0.635" dx="0.5" dy="1.27" layer="1"/>
-<wire x1="-0.635" y1="0" x2="-0.635" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.905" x2="1.905" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.905" x2="1.905" y2="0" width="0.1524" layer="21"/>
+<smd name="P$1" x="0" y="0.635" dx="2.54" dy="5.08" layer="1"/>
+<smd name="P$2" x="3.81" y="0.635" dx="2.54" dy="5.08" layer="1"/>
+<wire x1="-1.778" y1="-1.778" x2="-1.778" y2="3.556" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="3.556" x2="5.588" y2="3.556" width="0.1524" layer="21"/>
+<wire x1="5.588" y1="3.556" x2="5.588" y2="-1.778" width="0.1524" layer="21"/>
+<text x="-1.524" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="LED_5MM">
 <circle x="0" y="-1.27" radius="2.5" width="0.127" layer="21"/>
@@ -361,11 +362,8 @@ DIN A4, landscape with location and doc. field</description>
 </package>
 <package name="TP">
 <pad name="1" x="0" y="0" drill="1" diameter="1.8"/>
-<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
 <text x="0" y="2.286" size="1.27" layer="25" align="center">&gt;NAME</text>
+<circle x="0" y="0" radius="1.27" width="0.1524" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -597,9 +595,9 @@ DIN A4, landscape with location and doc. field</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.254" drill="0.8">
+<class number="0" name="default" width="0.254" drill="0">
 </class>
-<class number="1" name="POWER" width="0.3" drill="0.8">
+<class number="1" name="POWER" width="0.3" drill="0">
 </class>
 </classes>
 <parts>

@@ -1,0 +1,33 @@
+Partlist exported from S:/Private/Design/Curcuit Tree/EAGLE_BOT/PAGE1.sch at 1/13/2022 8:02 PM
+
+Qty Value       Device         Package       Parts                                                                              Description                                               POPULARITY
+1               IDC20_BEN      IDC20_BENDING IDC1                                                                                                                                                   
+4               LED_BEN        LED_5MM_BEN   LED1, LED2, LED3, LED4                                                                                                                                 
+1               POWER_2        POWER_2       P1                                                                                                                                                     
+1   0.012uF     CAP_POL_NOR    CAP_POL       C4                                                                                                                                                     
+18  0.1uF       CAP_NP_SMD2012 SMD2012       C2, C5, C6, C7, C8, C9, C11, C15, C16, C19, C20, C21, C22, C23, C24, C25, C26, C27                                                                     
+1   0.1uF       CAP_POL_NOR    CAP_POL       C1                                                                                                                                                     
+3   100k        RES_2012       SMD2012       R19, R20, R21                                                                                                                                          
+1   100uF       CAP_POL_BIG    CAP_POL_BIG   C10                                                                                                                                                    
+13  10K         RES_2012       SMD2012       R4, R6, R8, R10, R13, R16, R34, R36, R38, R40, R42, R44, R48                                                                                           
+1   10K         VR_BIG         3RP/1610N     VR1                                                                                                                                                    
+6   10uF        CAP_POL_NOR    CAP_POL       C3, C12, C13, C14, C17, C18                                                                                                                            
+2   1K          RES_2012       SMD2012       R2, R18                                                                                                                                                
+16  1N4148      DIODE_SMD      SMD_DIODE     D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14, D15, D16                                                                                  
+2   2.2K        RES_2012       SMD2012       R35, R37                                                                                                                                               
+13  20K         RES_2012       SMD2012       R3, R5, R7, R9, R11, R12, R14, R15, R39, R41, R43, R45, R46                                                                                            
+1   3.3K        RES_2012       SMD2012       R1                                                                                                                                                     
+1   4001_SOP14  4001_SOP14     SOP14         U15                                                                                                                                                    
+2   4013_SMD    4013_SMD       SOIC_14       U8, U9                                                                             Dual D-Type Flip-Flop                                               
+3   4017_SOP16  4017_SOP16     SOP16         U7, U11, U12                                                                                                                                           
+2   4030        4030           DIP14         U3, U4                                                                                                                                                 
+1   4040        4040           DIP16         U2                                                                                                                                                     
+1   4081        4081           DIP14         U16                                                                                                                                                    
+1   4081_SMD    4081_SMD       SOP14         U6                                                                                                                                                     
+1   4510_DIP    4510_DIP       DIP16         U14                                                                                                                                                    
+1   4518_SMD    4518_SMD       SOP16         U13                                                                                                                                                    
+3   47k         RES_2012       SMD2012       R17, R22, R23                                                                                                                                          
+1   IRF640      IRF620         TO220         Q1                                                                                 N-Channel Enhancement MOSFET (HEXFET); 200V; 5,2A; 0,8Ohm 1         
+1   LM324       LM324          DIP14         U5                                                                                                                                                     
+1   NE555_SOP8  NE555_SOP8     SOP8          U1                                                                                                                                                     
+1   NE556_SOP14 NE556_SOP14    SOP14         U10                                                                                                                                                    

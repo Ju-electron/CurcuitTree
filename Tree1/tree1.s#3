@@ -254,9 +254,6 @@ DIN A4, landscape with location and doc. field</description>
 <vertex x="23" y="-0.08"/>
 <vertex x="23" y="-5.08"/>
 </polygon>
-<wire x1="-43.18" y1="-5.08" x2="-43.18" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-43.18" y1="1.27" x2="43.18" y2="1.27" width="0.127" layer="21"/>
-<wire x1="43.18" y1="1.27" x2="43.18" y2="-5.08" width="0.127" layer="21"/>
 <text x="-43.18" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-35.56" y="2.54" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -621,7 +618,9 @@ DIN A4, landscape with location and doc. field</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.254" drill="0.8">
+</class>
+<class number="1" name="POWER" width="0.3" drill="0.8">
 </class>
 </classes>
 <parts>
@@ -852,7 +851,7 @@ DIN A4, landscape with location and doc. field</description>
 <label x="76.2" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="+5V" class="1">
 <segment>
 <pinref part="+5V1" gate="G$1" pin="+5V"/>
 <pinref part="CON2" gate="G$1" pin="P$1"/>
